@@ -1,0 +1,27 @@
+.zymmo-logo {
+    padding-left: 0px !important;
+}
+
+.zymmo-logo:hover {
+    cursor: pointer;
+}
+
+.zymmo-logo img {
+    height: 40px;
+    width: 40px;
+    margin: 0 auto;
+}
+
+.nav-item {
+    font-size: small;
+    color: rgb(116, 116, 116);
+}
+
+.nav-item:hover {
+    cursor: pointer;
+}
+
+.nav-item.active {
+    font-size: small;
+    color: rgb(51, 51, 51);
+}
