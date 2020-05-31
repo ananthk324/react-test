@@ -3,6 +3,7 @@ import {
   ComposableMap,
   Geographies,
   Geography,
+  ZoomableGroup,
 } from 'react-simple-maps';
 import axios from 'axios';
 import ReactTooltip from 'react-tooltip';
@@ -28,11 +29,13 @@ const ChoroplethMap = () => {
       scale: 420,
   }
 
-  const onMouseEnter = (geo, current = { positive: 'NA' }) => {
+  const onMouseEnter = (geo, current = { positive: null, recovered: null }) => {
       return () => {
         console.log(geo.properties.name);
         console.log(current.positive);
-        setTooltipContent(`${geo.properties.name}: ${current.positive}`);
+        setTooltipContent(`${geo.properties.name} 
+          <br/> Total No of Foodie: ${current.positive ? current.positive : 'NA'}
+          <br/> Total No of Chef: ${current.recovered ? current.recovered : 'NA'}`);
       }
   }
 
@@ -42,12 +45,16 @@ const ChoroplethMap = () => {
 
   return (
     <>
-        <ReactTooltip>{tooltipContent}</ReactTooltip>
+        <ReactTooltip type="light" multiline={true} html={true}>
+            {tooltipContent}
+        </ReactTooltip>
         <ComposableMap
             projection="geoAlbersUsa"
             width={350}
             height={200}
-            projectionConfig={PROJECTION_CONFIG}>
+            projectionConfig={PROJECTION_CONFIG}
+            data-tip="">
+            <ZoomableGroup zoom={1}>
             <Geographies 
                 geography={UsaJson}
                 fill="#E0E0E0"
@@ -61,11 +68,26 @@ const ChoroplethMap = () => {
                             key={geo.rsmKey} 
                             geography={geo} 
                             onMouseEnter={onMouseEnter(geo, current)}
-                            onMouseLeave={onMouseLeave}/>
+                            onMouseLeave={onMouseLeave}
+                            style={{
+                              default: {
+                                fill: "#E0E0E0",
+                                outline: "none"
+                              },
+                              hover: {
+                                fill: "#F3802A",
+                                outline: "none"
+                              },
+                              pressed: {
+                                fill: "#F3802A",
+                                outline: "none"
+                              }
+                            }}/>
                         );
                       })
                   }
             </Geographies>
+            </ZoomableGroup>
         </ComposableMap>
     </>
   );
