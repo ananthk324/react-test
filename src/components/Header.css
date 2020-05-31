@@ -16,6 +16,9 @@
 .header-container .header-item.title {
     flex: 4;
     color: rgb(85, 85, 85);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
 }
 
 .header-container .header-item.search-box {
@@ -40,12 +43,14 @@
 
 .header-container .header-item.search-box input:placeholder-shown {
     font-size: 11px;
+    color: #e7e7e7;
 }
 
 .header-container .header-item.admin-menu {
     flex: 0.5;
     text-align: right;
-    font-size: smaller;
+    font-size: 10px;
+    font-weight: 500;
     margin-left: 45px;
     color: rgb(85, 85, 85);
 }

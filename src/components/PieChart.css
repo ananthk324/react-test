@@ -1,4 +1,6 @@
 .pie-chart-title {
     font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 2px;
     color: rgb(85, 85, 85);
 }
