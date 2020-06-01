@@ -5,7 +5,7 @@ const SideNav = () => {
     const logo = require('../constants/zymmologo.png');
 
     return (
-        <>
+        <div className="sidenav">
             <div className="zymmo-logo">
                 <img src={logo} alt="Zymmo Logo" />
             </div>
@@ -33,7 +33,7 @@ const SideNav = () => {
             <div className="nav-item">
                 Payouts to Chefs
             </div>
-        </>
+        </div>
     );
 }
 

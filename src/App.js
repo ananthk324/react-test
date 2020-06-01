@@ -1,22 +1,17 @@
 import React from 'react';
-import './App.css';
-import SideNav from './components/SideNav';
-import Header from './components/Header';
-import DataBar from './components/DataBar';
-import MapSection from './components/MapSection';
-
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import Home from './pages/Home';
+import Signin from './pages/Signin';
 
 const App = () => {
     return (
-        <div className="container">
-            <div className="sidenav">
-                <SideNav />
-            </div>
-            <div className="main">
-                <Header />
-                <DataBar />
-                <MapSection />
-            </div>
+        <div className="App">
+            <Router>
+                <Switch>
+                    <Route exact path={"/"} component={Signin} />
+                    <Route path={"/home"} component={Home} />
+                </Switch>
+            </Router>
         </div>
     );
 }

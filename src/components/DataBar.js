@@ -3,14 +3,14 @@ import './DataBar.css';
 
 const DataBar = () => {
     return (
-        <>
+        <div className="databar">
             <div className="databar-title">
-            TODAY'S DATA
+                TODAY'S DATA
             </div>
             <div className="databar-container">
                 <div className="data-rectangle">
                     <div className="value">
-                        $1425
+                        $1429
                     </div>
                     <div className="text-content">
                         Revenue
@@ -49,7 +49,7 @@ const DataBar = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

@@ -17,7 +17,7 @@ const MapSection = () => {
                     </div>
                     <div className="global-foodie-data">
                         <div className="global-text-content">Total No of Foodie</div>
-                        <div className="global-value-content">1000</div>
+                        <div className="global-value-content">1850</div>
                     </div>
                     <div className="global-menu-data">
                         <div className="global-text-content">Total No of Menu</div>
@@ -25,7 +25,7 @@ const MapSection = () => {
                     </div>
                     <div className="global-dish-data">
                         <div className="global-text-content">Total No of Dish</div>
-                        <div className="global-value-content">854</div>
+                        <div className="global-value-content">85554</div>
                     </div>
                 </div>
                 <div className="choropleth-map">

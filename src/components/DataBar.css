@@ -1,20 +1,27 @@
-.databar-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1em;
-    margin: 0.5em 0.7em;
-    border-radius: 6px;
-    background-color: #F5F5F5;
-    box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.05), -4px -4px 6px 0 rgba(255, 255, 255, 0.89), 2px 2px 4px 0 rgba(0, 0, 0, 0.05), -2px -2px 4px 0 rgba(255, 255, 255, 0.89);
+.databar {
+    padding: 1em 0.1em 0.1em 0.1em;
+    margin: 0.5em;
 }
 
 .databar-title {
-    padding: 1em 0.1em 1em 0.1em;
-    margin: 0.5em;
-    color: rgb(85, 85, 85);
     font-weight: 500;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    color: rgb(85, 85, 85);
+}
+
+.databar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    padding: 1.2em 0.8em;
+    margin: 0.5em 0.2em;
+    margin-top: 1.5em;
+    border-radius: 6px;
+    background-color: #F5F5F5;
+    box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.05), -4px -4px 6px 0 rgba(255, 255, 255, 0.89), 2px 2px 4px 0 rgba(0, 0, 0, 0.05), -2px -2px 4px 0 rgba(255, 255, 255, 0.89);
 }
 
 .databar-container .data-rectangle {
@@ -23,16 +30,16 @@
     justify-items: center;
     justify-content: space-evenly;
     margin: auto;
-    padding: 0.5em;
-    height: 45px;
-    width: 155px;
+    padding: 0.6em 0.2em;
+    width: 162px;
+    height: 48px;
     border-radius: 6px;
     background: linear-gradient(344.34deg, #FFAB3F 0%, #FE5206 100%, #FE5206 100%);
     box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.05), -4px -4px 6px 0 rgba(255, 255, 255, 0.89), 2px 2px 4px 0 rgba(0, 0, 0, 0.05), -2px -2px 4px 0 rgba(255, 255, 255, 0.89);
 }
 
 .data-rectangle .value {
-    font-size: 30px;
+    font-size: 27px;
     font-weight: 500;
     color: #ffffff;
     margin: auto 0;
@@ -40,6 +47,6 @@
 
 .data-rectangle .text-content {
     color: #ffffff;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
 }
