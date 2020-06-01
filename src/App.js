@@ -1,6 +1,6 @@
 import React, { createContext, useReducer } from 'react';
 import Routes from './routes/Routes';
-import RoutesNoAuth from './routes/RoutesNoAuth';
+import RoutesForNoAuth from './routes/RoutesForNoAuth';
 import Reducer from './reducers';
 
 // Context for Authentication values
@@ -23,7 +23,7 @@ const App = () => {
             }}>
             <div className="App">
                 {!state.isAuthenticated ?           
-                <RoutesNoAuth /> :
+                <RoutesForNoAuth /> :
                 <Routes /> }
 
                 {/* Route only for development. Uncomment this Route */}

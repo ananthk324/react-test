@@ -1,0 +1,40 @@
+.sidenav {
+    background-color: #ffffff;
+    padding: 0.4em 0.5em 0.5em 0.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidenav>div {
+    margin: 0.9em 0.5em 0.9em 1em;
+    padding: 0.5em;
+}
+
+.zymmo-logo {
+    padding-left: 0px !important;
+}
+
+.zymmo-logo:hover {
+    cursor: pointer;
+}
+
+.zymmo-logo img {
+    height: 40px;
+    width: 40px;
+    margin: 0 auto;
+}
+
+.nav-item {
+    font-size: small;
+    font-weight: 500;
+    color: rgb(161, 161, 161);
+}
+
+.nav-item:hover {
+    cursor: pointer;
+}
+
+.nav-item.active {
+    font-size: small;
+    color: rgb(41, 41, 41);
+}

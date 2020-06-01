@@ -1,0 +1,75 @@
+.mapsection {
+    padding: 1em 0.1em 0.1em 0.1em;
+    margin: 0.5em;
+}
+
+.mapsection-title {
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    color: rgb(85, 85, 85);
+}
+
+.mapsection-wrapper {
+    display: flex;
+    padding-top: 1em 0em;
+    margin: 0.1em;
+    margin-top: 1.5em;
+    justify-content: space-between;
+}
+
+.global-distribution {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.choropleth-map {
+    flex: 2.8;
+    margin: 0.1em;
+    padding: 0.1em;
+    height: 300px;
+    position: relative;
+}
+
+.orders-doughnutchart {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    margin: 0.2em;
+    border-radius: 4px;
+    background-color: #F5F5F5;
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.05), -4px -4px 6px 0 rgba(255, 255, 255, 0.89), 2px 2px 4px 0 rgba(0, 0, 0, 0.05), -2px -2px 4px 0 rgba(255, 255, 255, 0.89);
+}
+
+.global-distribution>div {
+    margin: 0.5em 0.2em;
+    padding: 0.4em 1em;
+    height: 24px;
+    width: 155px;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: #F5F5F5;
+    box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.05), -4px -4px 6px 0 rgba(255, 255, 255, 0.89), 2px 2px 4px 0 rgba(0, 0, 0, 0.05), -2px -2px 4px 0 rgba(255, 255, 255, 0.89);
+}
+
+.global-text-content {
+    flex: 2.3;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: rgb(70, 70, 70);
+}
+
+.global-value-content {
+    flex: 0.8;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(245, 126, 35);
+}
