@@ -2,7 +2,7 @@ import React from 'react';
 import './SideNav.css';
 
 const SideNav = () => {
-    const logo = require('../constants/zymmologo.png');
+    const logo = require('../constants/zymmo-logo.png');
 
     return (
         <div className="sidenav">

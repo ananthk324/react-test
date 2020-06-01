@@ -1,18 +1,35 @@
-import React from 'react';
-import { HashRouter as Router, Switch, Route } from "react-router-dom";
-import Home from './pages/Home';
-import Signin from './pages/Signin';
+import React, { createContext, useReducer } from 'react';
+import Routes from './routes/Routes';
+import RoutesNoAuth from './routes/RoutesNoAuth';
+import Reducer from './reducers';
+
+// Context for Authentication values
+export const AuthContext = createContext();
+
+const initialState = {
+    isAuthenticated: null,
+    email: ""
+};
 
 const App = () => {
+
+    const [state, dispatch] = useReducer(Reducer, initialState);
+
     return (
-        <div className="App">
-            <Router>
-                <Switch>
-                    <Route exact path={"/"} component={Signin} />
-                    <Route path={"/home"} component={Home} />
-                </Switch>
-            </Router>
-        </div>
+        <AuthContext.Provider 
+            value={{
+            state,
+            dispatch
+            }}>
+            <div className="App">
+                {!state.isAuthenticated ?           
+                <RoutesNoAuth /> :
+                <Routes /> }
+
+                {/* Route only for development. Uncomment this Route */}
+                <Routes />
+            </div>
+        </AuthContext.Provider>
     );
 }
 

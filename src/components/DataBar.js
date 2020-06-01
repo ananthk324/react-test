@@ -10,7 +10,7 @@ const DataBar = () => {
             <div className="databar-container">
                 <div className="data-rectangle">
                     <div className="value">
-                        $1429
+                        $14295
                     </div>
                     <div className="text-content">
                         Revenue

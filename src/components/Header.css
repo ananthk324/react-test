@@ -37,15 +37,13 @@
     width: 240px;
     height: 18px;
     background-color: #ebebeb;
-}
-
-.header-container .header-item.search-box input:focus {
+    color: rgb(85, 85, 85);
     outline: none;
 }
 
 .header-container .header-item.search-box input:placeholder-shown {
     font-size: 11px;
-    color: #e7e7e7;
+    color: rgb(85, 85, 85);
 }
 
 .header-container .header-item.admin-menu {
@@ -71,5 +69,5 @@
     padding-left: 10px;
     padding-right: 10px;
     pointer-events: none;
-    color: #cac7c7;
+    color: rgb(161, 161, 161);
 }
